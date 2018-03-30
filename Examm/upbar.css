@@ -1,0 +1,188 @@
+body {
+  width: 400px;
+  height: 300px;
+}
+
+#upbar {
+  height: 22px;
+  width: 170px;
+  border: 1px solid black;
+  border-bottom: 4px solid black;
+  vertical-align: middle;
+}
+
+#signal {
+  width: 35px;
+  height: 20px;
+  margin: 1px;
+  margin-left: 5px;
+  bottom: 0px;
+  float: left;
+  transform: scaleY(-1);
+}
+
+[id^=level] {
+  width: 5px;
+  height: 20px;
+  float: left;
+  background-color: black;
+  margin: 1px;
+}
+
+#level1 {
+  height: 4px;
+}
+
+#level2 {
+  height: 8px;
+}
+
+#level3 {
+  height: 12px;
+}
+
+#level4 {
+  height: 16px;
+}
+
+#procent {
+  width: 30px;
+  height: 20px;
+  line-height: 24px;
+  float: left;
+}
+
+#battery {
+  width: 40px;
+  height: 20px;
+  margin: 0.5px;
+  float: left;
+  position: relative;
+  left: 5px;
+}
+
+#plus {
+  width: 3px;
+  height: 10px;
+  margin-top: 6px;
+  background-color: black;
+  border-radius: 3px 0 0 3px;
+  border: 0.5px solid black;
+  float: left;
+}
+
+#charLev {
+  width: 35px;
+  height: 16px;
+  padding: 0.5px;
+  margin-top: -15px;
+  border: 0.5px solid black;
+  background-color: white;
+  position: relative;
+  float: right;
+  align-content: center;
+}
+
+#charL1 {
+  width: 5px;
+  height: 14px;
+  margin: 0.5px;
+  border: 0.5px solid black;
+  background-color: green;
+  float: right;
+}
+
+#charL2 {
+  width: 5px;
+  height: 14px;
+  margin: 0.5px;
+  border: 0.5px solid black;
+  float: right;
+  animation: charging 2s infinite;
+  animation: charging2 2s infinite;
+  animation: charging3 2s infinite;
+}
+
+#charL3 {
+  width: 5px;
+  height: 14px;
+  margin: 0.5px;
+  border: 0.5px solid black;
+  float: right;
+  animation: charging 2s infinite;
+  animation: charging2 2s infinite;
+  animation: charging3 2s infinite;
+}
+
+#charL4 {
+  width: 5px;
+  height: 14px;
+  margin: 0.5px;
+  border: 0.5px solid black;
+  float: right;
+  animation: charging 2s infinite;
+  animation: charging2 2s infinite;
+  animation-delay: 1s;
+}
+
+#charL5 {
+  width: 5px;
+  height: 14px;
+  margin: 0.5px;
+  border: 0.5px solid black;
+  float: right;
+}
+
+@keyframes charging {
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-color: white;
+  }
+  0% {
+    background-color: green;
+  }
+}
+
+@keyframes charging2 {
+  50% {
+    background-color: green;
+  }
+  0% {
+    background-color: green;
+  }
+}
+
+@keyframes charging3 {
+  100% {
+    background-color: green;
+  }
+}
+
+#time {
+  width: 45px;
+  height: 20px;
+  line-height: 24px;
+  margin-left: 11px;
+  float: left;
+}
+
+.time {
+  width: 14px;
+  height: 20px;
+  line-height: 24px;
+  float: left;
+  text-align: center;
+}
+
+@keyframes secdot {
+  100% {
+    color: white;
+  }
+}
+
+.time:nth-child(2) {
+  width: 8px;
+  animation: secdot 1s infinite;
+}
